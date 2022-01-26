@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto:wght@400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --text-base: #afb6c2;
+    --text-title: #d4ccb6;
+    --background: #191816;
+    --form-background: #24221f;
+    --primary-color: #ffc632;
+}
+ body {
+     background-color: var(--background);
+     font-family: 'Poppins', sans-serif;
+ }
+
+ header img {
+     margin: 20px;
+ }
+
+
+ .container {
+     width: 572px;
+     height: 512px;
+     background-color: var(--form-background);
+     border-radius: 10px;
+     margin: 40px auto 0 auto;
+     display: flex;
+     flex-direction: column;
+     text-align: center;
+ }
+
+ .titulo h2 {
+    color: var(--text-title);
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    margin-top: 10%;
+ }
+
+ .subtitulo p {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--text-base);
+    margin-bottom: 2.5%;
+ }
+
+ .form {
+     padding: 20px;
+ }
+
+.email {
+    margin-bottom: 15px;
+} 
+
+.label-1 label {
+    color: var(--text-base);
+    position: relative;
+    left: -140px;
+    top: -10px;
+}
+
+.input-email input {
+    width: 315px;
+    height: 44px;
+    background-color: var(--form-background);
+    border: 1px solid var(--text-base);
+    border-radius: 4px;
+    background-image: url(/assets/images/mail.svg);
+    background-repeat: no-repeat;
+    padding-right: 20px;
+    background-position-y: center;
+    background-position-x: 5px;
+}
+
+.label2 label {
+    color: var(--text-base);
+    position: relative;
+    left: -140px;
+    top: -10px;
+}
+
+.input-senha input {
+    width: 315px;
+    height: 44px;
+    background-color: var(--form-background);
+    border: 1px solid var(--text-base);
+    border-radius: 4px;
+    background-image: url(/assets/images/lock.svg);
+    background-repeat: no-repeat;
+    padding-right: 20px;
+    background-position-y: center;
+    background-position-x: 5px;
+    margin-bottom: 20px;
+}
+
+.input-senha input:focus-within {
+    border: 1.5px solid var(--primary-color);
+    outline: 1.5px solid var(--primary-color);
+    background-image: url(/assets/images/lock-focus.svg);
+}
+
+.input-email input:focus-within {
+    background-image: url(/assets/images/mail-focus.svg);
+    outline: 1.5px solid var(--primary-color);
+    border: 1.5px solid var(--primary-color);
+}
+
+.check input {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #868686;
+    border-radius: 4px;
+    background: var(--form-background);
+    position: relative;
+    left: -100px;
+    top: 10px;
+}
+
+#lembre:checked {
+    background-color: var(--primary-color);
+}
+
+.check label {
+    color: var(--text-base);
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    position: relative;
+    left: -92px;
+    top: 5px;
+}
+
+.span span {
+    color: var(--primary-color);
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    position: relative;
+    left: 88px;
+    top: -20px;
+    cursor: pointer;
+}
+
+.botao button {
+    background-color: var(--primary-color);
+    color: var(--background);
+    border-radius: 4px;
+    width: 334px;
+    height: 51px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: 0.015em;
+    text-transform: uppercase;
+    padding: 12px 24px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.span-2 span {
+    color: var(--primary-color);
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    cursor: pointer;
+}

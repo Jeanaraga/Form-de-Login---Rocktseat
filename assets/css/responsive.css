@@ -1,0 +1,34 @@
+@media screen and (max-width: 600px) {
+    .container {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .container {
+        background-color: #191816;
+    }
+
+    .input-email input {
+        width: 290px;
+    }
+
+    .input-senha input {
+        width: 290px;
+    }
+
+    .label-1 label {
+        left: -130px;
+        top: -7px;
+    }
+
+    .label2 label {
+        left: -130px;
+        top: -7px;
+    }
+
+    .botao button {
+        width: 280px;
+    }
+
+}
