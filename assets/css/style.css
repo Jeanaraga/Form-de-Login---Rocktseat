@@ -27,7 +27,7 @@
      height: 512px;
      background-color: var(--form-background);
      border-radius: 10px;
-     margin: 40px auto 0 auto;
+     margin: 20px auto 20px auto;
      display: flex;
      flex-direction: column;
      text-align: center;
@@ -114,22 +114,8 @@
     border: 1.5px solid var(--primary-color);
 }
 
-.check input {
-    width: 20px;
-    height: 20px;
-    border: 1px solid #868686;
-    border-radius: 4px;
-    background: var(--form-background);
-    position: relative;
-    left: -100px;
-    top: 10px;
-}
 
-#lembre:checked {
-    background-color: var(--primary-color);
-}
-
-.check label {
+.check-span label {
     color: var(--text-base);
     font-family: Roboto;
     font-style: normal;
@@ -137,8 +123,8 @@
     font-size: 16px;
     line-height: 19px;
     position: relative;
-    left: -92px;
-    top: 5px;
+    left: 105px;
+    top: 3px;
 }
 
 .span span {
@@ -150,7 +136,7 @@
     line-height: 21px;
     position: relative;
     left: 88px;
-    top: -20px;
+    top: -23px;
     cursor: pointer;
 }
 
@@ -180,4 +166,36 @@
     font-size: 14px;
     line-height: 21px;
     cursor: pointer;
+}
+
+.content {
+    display: flex ;
+}
+
+#checkbox-label {
+    cursor: pointer;
+    border: 1px solid var(--text-base);
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+    position: relative;
+    left: 100px;
+    top: 4px;
+}
+
+#checkbox-label span {
+    display: block;
+    width: 100%;
+    height: 100%;
+    
+}
+
+#lembre {
+    position: absolute;
+    opacity: 0;
+}
+
+#lembre:checked + #checkbox-label span:nth-child(1) {
+    background-color: var(--primary-color);
+    background-image: url(/assets/images/check.svg);
 }
